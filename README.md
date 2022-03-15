@@ -13,9 +13,9 @@ In this project the objective was to implement object detection for all pairs of
 - _RetinaNet_: an object detection architecture whose design is based on neural networks and has better precision than the widely known YOLO (you only look once).
 - _resnet50\_coco\_v2.h5_: a RetinaNet based model pretrained on the COCO dataset.
 
-To begin the project, 358 images were scrapped from Google Images with the search terms &#39;glasses&#39;, &#39;eyewear&#39;, &#39;medicated glasses&#39;, &#39;spectacles&#39; and &#39;spectacle frames&#39; using python selenium and a geckodriver for Firefox browser.
+To begin the project, 358 images were scrapped from Google Images with the search terms &#39;glasses&#39;, &#39;eyewear&#39;, &#39;medicated glasses&#39;, &#39;spectacles&#39; and &#39;spectacle frames&#39; using python selenium and a [geckodriver](https://github.com/mozilla/geckodriver/releases) for Firefox browser.
 
-Following the data collection, the images were resized to 400x400 pixels each using a python script where OpenCV was used. After obtaining the resized images, the dataset was split into a 70%:30% ratio for training and testing respectively. Each image in the training set was then annotated with labels using LabelImg; a python-based graphical image annotation application which outputs xml files named similarly to the corresponding image files.
+Following the data collection, the images were resized to 400x400 pixels each using a python script where OpenCV was used. After obtaining the resized images, the dataset was split into a 70%:30% ratio for training and testing respectively. Each image in the training set was then annotated with labels using [LabelImg](https://github.com/tzutalin/labelImg); a python-based graphical image annotation application which outputs xml files named similarly to the corresponding image files.
 
 The processed and labelled data was then uploaded to Google Drive and imported into Google Colabs where it was visualized, reorganized into csv files and additional folders for model training.
 
